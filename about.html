@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More About us</title>
+	<style type="text/css">
+		body
+		{
+			background-color: rgb(135,125,77);
+		}
+		.menu-bar
+		{
+			background: red;
+			text-align: center;
+		}
+		.menu-bar ul
+		{
+			display: inline-flex;
+			list-style: none;
+			color: white;
+		}
+		.menu-bar ul li
+		{
+			width: 120px;
+			margin: 15px;
+		}
+		.menu-bar ul li a
+		{
+			text-decoration: none;
+			color: blue;
+		}
+		.active, .menu-bar ul li:hover
+		{
+			background: yellow;
+			border-radius: 10px;
+		}h1 {
+        text-align: center;
+        margin: 50px auto 120px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 380px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .service {
+        background: #111;
+        padding: 30px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        box-shadow: 0 0 25px -5px rgb(253, 253, 253);
+        transition: transform .8s;
+        height: 372px;
+        margin: 50px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .service-logo {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: -90px auto 0;
+        background: #111;
+        border: 18px solid rgb(240, 240, 20);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service h4 {
+        height: 35px;
+        width: 80%;
+        margin: 50px auto;
+        background: #111;
+        position: relative;
+    }
+
+    .service h4::after,
+    .service h4::before {
+        content: '';
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .service h4::after {
+        background: linear-gradient(to right, #fff, rgb(240, 240, 20));
+        right: -5px;
+        top: -5px;
+    }
+
+    .service h4::before {
+        background: linear-gradient(to right, rgb(240, 240, 20), #fff);
+        left: -5px;
+        bottom: -5px;
+    }
+
+    .main:hover .service {
+        transform: translateY(-40px);
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 180px;
+    }
+
+    .service-colum {
+        flex: 3;
+        background: #111;
+    }
+
+    i {
+        font-size: 50px;
+    }
+	</style>
+</head>
+<body>
+	<div class="menu-bar">
+<ul>
+	<li class="active"><a href="coverpage.html" target="blank"> <i class="fa fa-home"></i>Home</a></li>
+	<li><a href="ruby.html">Ruby</a></li>
+	<li><a href="java.html">Java</a></li>
+	<li><a href="python.html">Python</a></li>
+	<li><a href="php.html">Php</a></li>
+	<li><a href="news.html">News</a></li>
+	<li><a href="about.html">About us</a></li>
+	<li><a href="contact.html">Contact us</a></li>
+</ul>
+</div>
+	<h1 style="color: pink;" style="text-align: center;">About us</h1>
+
+	<section id="services">
+    <h1>What We Do?</h1>
+    <div class="container">
+        <div class="row">
+
+            <div class="service-colum">
+                <div class="main">
+                    <div class="service">
+                        <div class="service-logo"><i class="fas fa-paint-brush"></i></div>
+                        <h4>Web Design</h4>
+                        <p>⚡ Designing highly attractive user interface for mobile and web applications<br>
+                            ⚡ Customizing logo designs and building logos from scratch<br>
+                            ⚡ Creating the flow of application functionalities to optimize user experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-colum">
+                <div class="main">
+                    <div class="service">
+                        <div class="service-logo"><i class="fas fa-code"></i></div>
+                        <h4>Development</h4>
+                        <p>⚡ Building resposive websites and applications that are used by our customers egfectively.<br>
+                            ⚡ Developing mobile applications using Flutter, React Native and solo android apps using
+                            Kotlin<br>
+                            ⚡ Creating application backend in Node, Express & Flask</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-colum">
+                <div class="main">
+                    <div class="service">
+                        <div class="service-logo"><i class="fas fa-palette"></i></div>
+                        <h4>Graphic Designer</h4>
+                        <p>⚡ Designing highly attractive illustrations, logos, layouts and photos.<br>
+                            ⚡ Customizing logo designs and building logos from scratch<br>
+                            ⚡ visual aspects of websites, books, magazines, product packaging, and others.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-colum">
+                <div class="main">
+                    <div class="service">
+                        <div class="service-logo"><i class="fas fa-code"></i></div>
+                        <h4>Database Administrator</h4>
+                        <p>⚡ Responsible for creating databades, updating them, cleaning viruses in databases.<br>
+                            ⚡ building website databases from scratch<br>
+                            ⚡ and other projects that are database related in any field given.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+
+
+	<title>COMPUTER SCIENCE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*
+		{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: "Sira Semi Condensed", sans-serif;
+			transition: all 0.5s ease;
+		}
+		body
+		{
+			background-color: gray;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			font-family: sans-serif, Times New Roman;
+			font-size: 30px;
+			padding: 50px			
+		}
+
+		.menu-bar
+		{
+			background: red;
+			text-align: center;
+		}
+		.menu-bar ul
+		{
+			display: inline-flex;
+			list-style: none;
+			color: white;
+		}
+		.menu-bar ul li
+		{
+			width: 120px;
+			margin: 15px;
+		}
+		.menu-bar ul li a
+		{
+			text-decoration: none;
+			color: blue;
+		}
+		.active, .menu-bar ul li:hover
+		{
+			background: yellow;
+			border-radius: 10px;
+		}
+
+		.first-letter {
+  			font-size: 35px;
+  			line-height: 70px;
+		}
+		.btn
+		{
+			background: #fff;
+			padding: 8px 16px;
+			color: #111;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 6px 5px 11px 0px rgb(0, 0, 0);
+			text-decoration: none;
+		}
+		.btn i
+		{
+			margin: 0 10px 0 0;
+		}
+		#done, .download
+		{
+			background: blue;
+			color: #fff;
+		}
+		#done
+		{
+			width: 100px;
+			height: 100px;
+			background: blue;
+			top: 50%;
+			left: 50%;
+			display: flex;
+			position: absolute;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;
+			z-index: 1;
+			transition: all 0.5s ease;
+			transform: translate(-50%, -50%) scale(0, 0);
+		}
+		#done a
+		{
+			top:0;
+			right: 3px;
+			display: block;
+			position: absolute;
+			text-decoration: none;
+		}
+		#done span
+		{
+			background: blue;
+			padding: 8px 16px;
+			color: #111;
+			border-radius: 15px;
+			margin-right: 25px;
+		}
+		#done span i 
+		{
+			margin: 0 8px 0 0;
+		}
+		.download
+		{
+			width: 100px;
+			height: 100px;
+			top: 0;
+			left: 0;
+			display: block;
+			position: absolute;
+			z-index: 1;
+			visibility: hidden;
+			color: #111;
+			background: yellow;
+		}
+		.download:before
+		{
+			width: 100px;
+			height: 100px;
+			top: 0;
+			left: 0;
+			margin-top: -3px;
+			display: flex;
+			position: absolute;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;font-size: 15px;
+			content: "";
+		}
+		.download:after
+		{
+			background: #111;
+			width: 0;
+			height: 3px;
+			bottom: 0;
+			left: 0;
+			display: block;
+			position: absolute;
+			content: "";
+		}
+		#done:target
+		{
+			transform: translate(-50%, -50%) scale(1, 1);
+		}
+		#done:target .download
+		{
+			animation: show 5s linear;
+		}
+		@keyframes show
+		{
+			to{
+				visibility: visible;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+ 
+<div class="menu-bar">
+<ul>
+	<li class="active"><a href="coverpage.html" target="blank"> <i class="fa fa-home"></i>Home</a></li>
+	<li><a href="ruby.html">Ruby</a></li>
+	<li><a href="java.html">Java</a></li>
+	<li><a href="python.html">Python</a></li>
+	<li><a href="php.html">Php</a></li>
+	<li><a href="news.html">News</a></li>
+	<li><a href="about.html">About us</a></li>
+	<li><a href="contact.html">Contact us</a></li>
+</ul>
+</div>
+<p>
+	
+
+<span style="color: brown; float: left; font-size: 8.3em; font-weight: 600; line-height: 0.5; margin: -5px 5px -10px -5px;">s</span>ed lobortis magna sed ex laoreet, vel ornare lacus vehicula. Cras sagittis sollicitudin diam. Nunc ultrices elit a lectus faucibus rutrum. Phasellus lacinia, orci quis hendrerit lacinia, eros lorem suscipit nisl, nec luctus sem est id nisi. Ut vestibulum, ligula eget consectetur scelerisque, risus magna lobortis massa, eget accumsan leo velit non eros. Sed eu leo neque. Nulla facilisi. Integer auctor ipsum ut aliquam imperdiet. Nullam ullamcorper enim lacus, sed finibus odio elementum vitae. Ut eu imperdiet risus. Sed nec arcu non tellus laoreet blandit. Donec et nunc eget ligula eleifend pulvinar at vel lectus. Pellentesque feugiat nisl ut ultrices suscipit. Integer gravida elementum elit, vel maximus diam accumsan eget. Vestibulum eu eros non nulla semper ullamcorper.</p>
+<p>
+Ut ornare rutrum ex auctor viverra. Ut placerat nisl nec efficitur posuere. Maecenas vestibulum varius porttitor. Etiam viverra diam et orci pulvinar, ut placerat nisi varius. Fusce eleifend, augue non scelerisque hendrerit, tellus lectus sollicitudin urna, nec ultrices eros mauris non lacus. Nam et nulla rhoncus, commodo tellus sit amet, condimentum augue. Donec sagittis dignissim lectus in convallis. Fusce nisl turpis, aliquam nec tincidunt eget, tincidunt ac nisl. Curabitur laoreet orci quis purus auctor, a suscipit mauris facilisis. Sed a iaculis lorem, ac dapibus elit. Duis commodo aliquam velit vitae eleifend. Maecenas a erat posuere, venenatis ipsum at, tincidunt est. Morbi molestie a sem ac dapibus. Vivamus vel ligula sapien. Sed nec pellentesque neque.</p>
+<p>
+Nam tincidunt risus eu ex auctor, id molestie tortor commodo. Praesent id pretium libero. Sed nec nibh et velit fringilla venenatis. In sed ornare nunc. Mauris non placerat sem, vitae consectetur felis. Proin id blandit justo. Aenean lobortis, purus eget congue tincidunt, erat leo posuere felis, nec sagittis neque purus in dui. Fusce pellentesque pellentesque mauris, ac cursus felis maximus vel. Ut in porta ex. Mauris sit amet felis sit amet augue sodales tempus sed eget metus. Aliquam imperdiet porta fermentum. Phasellus eu ornare elit, a dictum justo. Sed rhoncus dolor odio, vel aliquam quam tristique ac. Donec aliquet placerat odio, ac pellentesque enim ultricies at. Donec sit amet nunc lorem.</p>
+<p>
+Sed nec nibh est. Proin ac condimentum felis. Nam maximus ornare tellus, vel blandit metus sollicitudin a. Vestibulum quis tortor rutrum, porttitor ex ac, egestas felis. Integer consequat odio et sapien tincidunt consectetur. In hac habitasse platea dictumst. Etiam vestibulum, dolor a vestibulum tincidunt, dolor ipsum varius orci, non hendrerit massa magna quis quam. Phasellus tempor mattis ullamcorper. Praesent a vestibulum libero. Vivamus luctus, eros quis pulvinar facilisis, odio nisl mattis elit, vel mollis lacus dui in arcu. Nulla cursus condimentum eros at fringilla. Aliquam erat volutpat. Morbi non sapien mattis arcu auctor consequat at ac dui. Integer ac consectetur arcu. Nulla porta elementum ligula, vitae blandit ex facilisis efficitur.</p>
+<p>
+Donec pharetra sapien a metus pulvinar porttitor. Maecenas malesuada finibus nibh, at malesuada neque dignissim quis. Nulla facilisi. Donec hendrerit aliquam fringilla. Cras vestibulum, odio id sagittis lacinia, nisi ex bibendum tellus, facilisis faucibus velit justo nec libero. Vivamus id imperdiet turpis. Vestibulum a posuere mauris, id hendrerit erat. Sed laoreet quis sem eu efficitur. Nam nulla mauris, aliquam sit amet nulla in, consequat tincidunt ipsum. In ac risus risus. Ut ac efficitur eros, a consequat dui. Nulla finibus justo at porttitor venenatis. Vivamus ut condimentum dolor, non tincidunt risus. Suspendisse consequat sit amet elit id congue
+</p>
+
+<div class="container">
+	<a class="btn" href="#done">
+		<i class="fas fa-download"></i>Download
+	</a>
+	<div id="done">
+		<a href="#">
+			<i class="fas fa-times-circle">
+				
+			</i>
+		</a>
+		<div class="download"></div>
+		<span><i class="fas fa-check"></i>Done</span>
+	</div>
+</div>
+<script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+<div class="about">
+<a class="bg_links social instagram" href="https://www.instagram.com/pyloti/" target="_blank">
+<span class="icon"><i class="fa fa-instagram"></i></span>
+</a>
+<a class="bg_links social telegram" href="https://t.me/paul" target="_blank">
+<span class="icon"><i class="fa fa-telegram"></i></span>
+</a>
+<a class="bg_links social github" href="https://www.github.com/smthari/" target="_blank">
+<span class="icon"><i class="fa fa-github"></i></span>
+</a>
+<a class="bg_links logo"></a>
+</div>
+
+<script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
